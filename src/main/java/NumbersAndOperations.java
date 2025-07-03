@@ -3,6 +3,7 @@ public class NumbersAndOperations {
      * Reto 1: Suma
      * Haz que el valor de numberA sea 23 y el de numberB sea 40
      * Crea una variable llamada "result" que contenga la suma de las dos variables anteriores (numberA mas numberB)
+     *
      * @return La variable result.
      */
     public int sum() {
@@ -10,23 +11,28 @@ public class NumbersAndOperations {
         int numberB;
 
         // Tu código aquí
+        numberA = 23;
+        numberB = 40;
 
-        return 0; // Sustituye el 0 por result
+        int result = numberA + numberB;
+        return result; // Sustituye el 0 por result
     }
 
     /**
      * Reto 2: División
      * ¡No modifiques el valor de numberA o numberB!
-     * Crea una variable llamada "result" que contenga la división de las dos variables anteriores (numberA partido por numberB).
+     * Crea una variable llamada "result" que contenga la división de las dos variables anteriores (numberA partido por numberB). 👁️ Esta división tiene decimales.
+     *
      * @return La variable result, solo puede ser float.
      */
-    public float division(){
+    public float division() {
         int numberA = 10;
         int numberB = 3;
 
         // Tu código aquí
+        float result = (float) numberA / numberB;
 
-        return 0.0f; // sustituye 0.0f por la variable "result"
+        return result; // sustituye 0.0f por la variable "result"
     }
 
     /**
@@ -35,11 +41,13 @@ public class NumbersAndOperations {
      *
      * @return No modifiques el return
      */
-    public int modulo(){
+    public int modulo() {
         int numberA = 1;
         int numberB = 1;
 
         // Tu código aquí
+        numberA = 5;
+        numberB = 4;
 
         return numberA % numberB; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
@@ -48,12 +56,14 @@ public class NumbersAndOperations {
      * Reto 4: Número aleatorio
      * Asigna un NUEVO valor a randomNumber, de forma que finalmente obtengamos un número aleatorio entre 0 y 100.
      * Utiliza Math.
+     *
      * @return No modifiques el return
      */
-    public int randomizer(){
+    public int randomizer() {
         int randomNumber = 9999;
 
         // Tu código aquí
+        randomNumber = (int) (Math.random() * 101);
 
         return randomNumber; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
@@ -62,15 +72,17 @@ public class NumbersAndOperations {
      * Reto 5: Potencia
      * Crea una variable llamada "result" que sea el resultado de elevar numberB a numberA.
      * El resultado debe ser un int
+     *
      * @return La variable result
      */
-    public int power(){
+    public int power() {
         int numberA = 9;
         int numberB = 3;
 
         // Tu código aquí
+        int result = (int) Math.pow(numberB, numberA);
 
-        return 0; // sustituye el 0 por la variable result
+        return result; // sustituye el 0 por la variable result
     }
 
     /**
@@ -84,6 +96,7 @@ public class NumbersAndOperations {
         double decimalNumber = 0.0;
 
         // Tu código aquí
+        decimalNumber = 9.5;
 
         return Math.round(decimalNumber); // No hace falta modificar el return. Ya tu sabes... 😉
     }
@@ -99,8 +112,9 @@ public class NumbersAndOperations {
         int initialValue = 7;
 
         // Tu código aquí
+        int finalResult = (initialValue + 5) * 13;
 
-        return 0; // Sustituye el 0 por finalResult
+        return finalResult; // Sustituye el 0 por finalResult
     }
 
     public static void main(String[] args) {

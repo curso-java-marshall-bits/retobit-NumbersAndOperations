@@ -6,12 +6,12 @@ public class NumbersAndOperations {
      * @return La variable result.
      */
     public int sum() {
-        int numberA;
-        int numberB;
-
+        int numberA = 23;
+        int numberB = 40;
+        int result;
         // Tu código aquí
-
-        return 0; // Sustituye el 0 por result
+        result = numberA + numberB;
+        return  result; // Sustituye el 0 por result
     }
 
     /**
@@ -23,10 +23,11 @@ public class NumbersAndOperations {
     public float division(){
         int numberA = 10;
         int numberB = 3;
+        float result;
 
         // Tu código aquí
-
-        return 0.0f; // sustituye 0.0f por la variable "result"
+        result = (float) numberA / numberB;
+        return result; // sustituye 0.0f por la variable "result"
     }
 
     /**
@@ -36,8 +37,8 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int modulo(){
-        int numberA = 1;
-        int numberB = 1;
+        int numberA = 5;
+        int numberB = 2;
 
         // Tu código aquí
 
@@ -51,10 +52,7 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int randomizer(){
-        int randomNumber = 9999;
-
-        // Tu código aquí
-
+        int randomNumber = (int) (Math.random() * 11);
         return randomNumber; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
 
@@ -70,7 +68,8 @@ public class NumbersAndOperations {
 
         // Tu código aquí
 
-        return 0; // sustituye el 0 por la variable result
+        int result = (int) Math.pow(numberB, numberA);
+        return result; // sustituye el 0 por la variable result
     }
 
     /**
@@ -81,10 +80,10 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public long roundNumber() { // Usamos 'long' porque Math.round() devuelve long
-        double decimalNumber = 0.0;
+    double decimalNumber = 0.0;
 
         // Tu código aquí
-
+        decimalNumber = 9.8;
         return Math.round(decimalNumber); // No hace falta modificar el return. Ya tu sabes... 😉
     }
 
@@ -99,8 +98,8 @@ public class NumbersAndOperations {
         int initialValue = 7;
 
         // Tu código aquí
-
-        return 0; // Sustituye el 0 por finalResult
+    int finalresult = (initialValue + 5) *13;
+        return finalresult; // Sustituye el 0 por finalResult
     }
 
     public static void main(String[] args) {

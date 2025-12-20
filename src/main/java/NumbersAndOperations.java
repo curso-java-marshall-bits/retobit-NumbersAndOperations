@@ -6,12 +6,14 @@ public class NumbersAndOperations {
      * @return La variable result.
      */
     public int sum() {
-        int numberA;
-        int numberB;
+        int numberA = 23;
+        int numberB = 40;
+
+        int result = numberA + numberB;
 
         // Tu código aquí
 
-        return 0; // Sustituye el 0 por result
+        return result; // Sustituye el 0 por result
     }
 
     /**
@@ -24,9 +26,11 @@ public class NumbersAndOperations {
         int numberA = 10;
         int numberB = 3;
 
+        float result = (float)numberA / numberB;
+
         // Tu código aquí
 
-        return 0.0f; // sustituye 0.0f por la variable "result"
+        return result ; // sustituye 0.0f por la variable "result"
     }
 
     /**
@@ -36,8 +40,8 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int modulo(){
-        int numberA = 1;
-        int numberB = 1;
+        int numberA = 3;
+        int numberB = 2;
 
         // Tu código aquí
 
@@ -51,7 +55,7 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int randomizer(){
-        int randomNumber = 9999;
+        int randomNumber = (int) (Math.random()*11);
 
         // Tu código aquí
 
@@ -68,9 +72,9 @@ public class NumbersAndOperations {
         int numberA = 9;
         int numberB = 3;
 
-        // Tu código aquí
+        int result = (int) Math.pow(numberB,numberA);
 
-        return 0; // sustituye el 0 por la variable result
+        return result; // sustituye el 0 por la variable result
     }
 
     /**
@@ -81,7 +85,7 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public long roundNumber() { // Usamos 'long' porque Math.round() devuelve long
-        double decimalNumber = 0.0;
+        double decimalNumber = 9.7;
 
         // Tu código aquí
 
@@ -98,9 +102,11 @@ public class NumbersAndOperations {
     public int combinedOperations() {
         int initialValue = 7;
 
+        int finalResult = (initialValue+5)*13;
+
         // Tu código aquí
 
-        return 0; // Sustituye el 0 por finalResult
+        return finalResult; // Sustituye el 0 por finalResult
     }
 
     public static void main(String[] args) {

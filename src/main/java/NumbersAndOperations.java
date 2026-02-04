@@ -10,8 +10,12 @@ public class NumbersAndOperations {
         int numberB;
 
         // Tu código aquí
+        numberA = 23;
+        numberB = 40;
 
-        return 0; // Sustituye el 0 por result
+        var results = numberA + numberB;
+
+        return results; // Sustituye el 0 por result
     }
 
     /**
@@ -25,8 +29,9 @@ public class NumbersAndOperations {
         int numberB = 3;
 
         // Tu código aquí
+        var results = ((float) numberA / numberB);
 
-        return 0.0f; // sustituye 0.0f por la variable "result"
+        return results; // sustituye 0.0f por la variable "result"
     }
 
     /**
@@ -40,6 +45,8 @@ public class NumbersAndOperations {
         int numberB = 1;
 
         // Tu código aquí
+        numberA = 3;
+        numberB = 2;
 
         return numberA % numberB; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
@@ -54,6 +61,7 @@ public class NumbersAndOperations {
         int randomNumber = 9999;
 
         // Tu código aquí
+        randomNumber = (int)(Math.random() * 101);
 
         return randomNumber; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
@@ -69,8 +77,9 @@ public class NumbersAndOperations {
         int numberB = 3;
 
         // Tu código aquí
+        double result = Math.pow(numberB,numberA);
 
-        return 0; // sustituye el 0 por la variable result
+        return (int) result; // sustituye el 0 por la variable result
     }
 
     /**
@@ -84,6 +93,7 @@ public class NumbersAndOperations {
         double decimalNumber = 0.0;
 
         // Tu código aquí
+        decimalNumber = 9.6;
 
         return Math.round(decimalNumber); // No hace falta modificar el return. Ya tu sabes... 😉
     }
@@ -99,11 +109,24 @@ public class NumbersAndOperations {
         int initialValue = 7;
 
         // Tu código aquí
+        var finalResult = ((initialValue + 5) * 13);
 
-        return 0; // Sustituye el 0 por finalResult
+        return finalResult; // Sustituye el 0 por finalResult
     }
 
     public static void main(String[] args) {
         // Puedes hacer pruebas por aquí 🤖
+        var val1 = 3;
+        var val2 = 2;
+        System.out.println( "El resultado es: " + val1 % val2);
+
+        int numberA = 9;
+        int mumberB = 3;
+        var result = Math.pow(mumberB, numberA);
+        System.out.println("la ptencia esa: " + result);
+
+        var numberOne = 7;
+        System.out.println("la suma de 7 + 5 mutiplicado por 13 es: " + (numberOne + 5) * 13);
+
     }
 }

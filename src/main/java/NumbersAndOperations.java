@@ -6,12 +6,16 @@ public class NumbersAndOperations {
      * @return La variable result.
      */
     public int sum() {
-        int numberA;
-        int numberB;
+
 
         // Tu código aquí
 
-        return 0; // Sustituye el 0 por result
+        int numberA = 23;
+        int numberB = 40;
+
+        int result = numberA + numberB;
+
+        return result; // Sustituye el 0 por result
     }
 
     /**
@@ -26,7 +30,9 @@ public class NumbersAndOperations {
 
         // Tu código aquí
 
-        return 0.0f; // sustituye 0.0f por la variable "result"
+        float result = (float) numberA / numberB;
+
+        return result; // sustituye 0.0f por la variable "result"
     }
 
     /**
@@ -36,8 +42,8 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int modulo(){
-        int numberA = 1;
-        int numberB = 1;
+        int numberA = 23;
+        int numberB = 22;
 
         // Tu código aquí
 
@@ -51,7 +57,7 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int randomizer(){
-        int randomNumber = 9999;
+        int randomNumber = (int) (Math.random()*101);
 
         // Tu código aquí
 
@@ -70,7 +76,9 @@ public class NumbersAndOperations {
 
         // Tu código aquí
 
-        return 0; // sustituye el 0 por la variable result
+        int result = (int) Math.pow(numberB,numberA);
+
+        return result; // sustituye el 0 por la variable result
     }
 
     /**
@@ -81,7 +89,7 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public long roundNumber() { // Usamos 'long' porque Math.round() devuelve long
-        double decimalNumber = 0.0;
+        double decimalNumber = 9.5;
 
         // Tu código aquí
 
@@ -100,7 +108,9 @@ public class NumbersAndOperations {
 
         // Tu código aquí
 
-        return 0; // Sustituye el 0 por finalResult
+        int finalResult = (initialValue + 5) * 13;
+
+        return finalResult; // Sustituye el 0 por finalResult
     }
 
     public static void main(String[] args) {

@@ -6,12 +6,13 @@ public class NumbersAndOperations {
      * @return La variable result.
      */
     public int sum() {
-        int numberA;
-        int numberB;
+        int numberA = 23;
+        int numberB = 40;
 
         // Tu código aquí
+        int result = numberA + numberB;
 
-        return 0; // Sustituye el 0 por result
+        return result; // Sustituye el 0 por result
     }
 
     /**
@@ -25,8 +26,9 @@ public class NumbersAndOperations {
         int numberB = 3;
 
         // Tu código aquí
+        float result = (float) numberA / numberB;
 
-        return 0.0f; // sustituye 0.0f por la variable "result"
+        return result; // sustituye 0.0f por la variable "result"
     }
 
     /**
@@ -36,8 +38,8 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int modulo(){
-        int numberA = 1;
-        int numberB = 1;
+        int numberA = 3;
+        int numberB = 2;
 
         // Tu código aquí
 
@@ -54,6 +56,7 @@ public class NumbersAndOperations {
         int randomNumber = 9999;
 
         // Tu código aquí
+        randomNumber = (int) (Math.random() * 101);
 
         return randomNumber; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
@@ -69,8 +72,9 @@ public class NumbersAndOperations {
         int numberB = 3;
 
         // Tu código aquí
+        int result = (int) Math.pow(numberB, numberA);
 
-        return 0; // sustituye el 0 por la variable result
+        return result; // sustituye el 0 por la variable result
     }
 
     /**
@@ -81,7 +85,7 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public long roundNumber() { // Usamos 'long' porque Math.round() devuelve long
-        double decimalNumber = 0.0;
+        double decimalNumber = 9.6;
 
         // Tu código aquí
 
@@ -97,13 +101,34 @@ public class NumbersAndOperations {
      */
     public int combinedOperations() {
         int initialValue = 7;
+        int finalResult = (initialValue + 5) * 13;
 
         // Tu código aquí
 
-        return 0; // Sustituye el 0 por finalResult
+        return finalResult; // Sustituye el 0 por finalResult
     }
 
     public static void main(String[] args) {
         // Puedes hacer pruebas por aquí 🤖
+        int number1 = 12;
+        int number2 = 33;
+
+        int result = number2 / number1;
+
+        int numberRandom = 99999;
+        numberRandom = (int) (Math.random() * 110);
+
+        double decimalNumber = 9.4;
+        decimalNumber = (int) Math.round(decimalNumber);
+
+        int numberA = 10;
+        int numberB = 3;
+
+        float resultado = (float) numberA / numberB;
+
+        System.out.println(result);
+        System.out.println("Número Random: " + numberRandom);
+        System.out.println("Numero redondeado: " + decimalNumber);
+        System.out.println(resultado);
     }
 }

@@ -6,12 +6,13 @@ public class NumbersAndOperations {
      * @return La variable result.
      */
     public int sum() {
-        int numberA;
-        int numberB;
-
+        int numberA=23;
+        int numberB=40;
+        int result;
+        result=numberA+numberB;
         // Tu código aquí
 
-        return 0; // Sustituye el 0 por result
+        return result; // Sustituye el 0 por result
     }
 
     /**
@@ -23,10 +24,11 @@ public class NumbersAndOperations {
     public float division(){
         int numberA = 10;
         int numberB = 3;
-
+        float result=0.0f;
+        result=(float) numberA/(float) numberB;
         // Tu código aquí
 
-        return 0.0f; // sustituye 0.0f por la variable "result"
+        return result; // sustituye 0.0f por la variable "result"
     }
 
     /**
@@ -36,8 +38,8 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public int modulo(){
-        int numberA = 1;
-        int numberB = 1;
+        int numberA = 9;
+        int numberB = 2;
 
         // Tu código aquí
 
@@ -52,9 +54,9 @@ public class NumbersAndOperations {
      */
     public int randomizer(){
         int randomNumber = 9999;
-
+        //randomNumber=Math.random();
         // Tu código aquí
-
+        randomNumber=(int)(Math.random()*100);
         return randomNumber; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
 
@@ -67,10 +69,10 @@ public class NumbersAndOperations {
     public int power(){
         int numberA = 9;
         int numberB = 3;
-
+        double result= Math.pow(numberB,numberA);
         // Tu código aquí
 
-        return 0; // sustituye el 0 por la variable result
+        return (int)result; // sustituye el 0 por la variable result
     }
 
     /**
@@ -81,7 +83,7 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public long roundNumber() { // Usamos 'long' porque Math.round() devuelve long
-        double decimalNumber = 0.0;
+        double decimalNumber = 10.3;
 
         // Tu código aquí
 
@@ -97,13 +99,18 @@ public class NumbersAndOperations {
      */
     public int combinedOperations() {
         int initialValue = 7;
-
+        int finallResult=(7+5)*13;
         // Tu código aquí
 
-        return 0; // Sustituye el 0 por finalResult
+        return finallResult; // Sustituye el 0 por finalResult
     }
 
     public static void main(String[] args) {
         // Puedes hacer pruebas por aquí 🤖
+        int randomNumber = 9999;
+        //randomNumber=Math.random();
+        // Tu código aquí
+        randomNumber=(int)(Math.random()*100);
+        System.out.println(randomNumber);
     }
 }

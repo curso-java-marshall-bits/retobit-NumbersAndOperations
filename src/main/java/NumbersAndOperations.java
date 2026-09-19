@@ -10,8 +10,12 @@ public class NumbersAndOperations {
         int numberB;
 
         // Tu código aquí
+        numberA = 23;
+        numberB = 40;
 
-        return 0; // Sustituye el 0 por result
+        int result = numberA + numberB;
+
+        return result; // Sustituye el 0 por result
     }
 
     /**
@@ -26,7 +30,9 @@ public class NumbersAndOperations {
 
         // Tu código aquí
 
-        return 0.0f; // sustituye 0.0f por la variable "result"
+        float total = 10f / 3f;
+
+        return total; // sustituye 0.0f por la variable "result"
     }
 
     /**
@@ -41,7 +47,7 @@ public class NumbersAndOperations {
 
         // Tu código aquí
 
-        return numberA % numberB; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
+        return numberA / numberB; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
 
     /**
@@ -54,7 +60,7 @@ public class NumbersAndOperations {
         int randomNumber = 9999;
 
         // Tu código aquí
-
+        randomNumber = (int) (Math.random() * 100);
         return randomNumber; // No hace falta modificar el return. Si los valores que has asignado son correctos, el test pasará 😉
     }
 
@@ -69,8 +75,8 @@ public class NumbersAndOperations {
         int numberB = 3;
 
         // Tu código aquí
-
-        return 0; // sustituye el 0 por la variable result
+        int result = (int) Math.pow(numberB,numberA);
+        return result; // sustituye el 0 por la variable result
     }
 
     /**
@@ -81,10 +87,9 @@ public class NumbersAndOperations {
      * @return No modifiques el return
      */
     public long roundNumber() { // Usamos 'long' porque Math.round() devuelve long
-        double decimalNumber = 0.0;
+        double decimalNumber = 9.6;
 
         // Tu código aquí
-
         return Math.round(decimalNumber); // No hace falta modificar el return. Ya tu sabes... 😉
     }
 
@@ -100,10 +105,12 @@ public class NumbersAndOperations {
 
         // Tu código aquí
 
-        return 0; // Sustituye el 0 por finalResult
+        int finalResult = (initialValue + 5) * 13;
+
+        return finalResult; // Sustituye el 0 por finalResult
     }
 
     public static void main(String[] args) {
-        // Puedes hacer pruebas por aquí 🤖
+        // No me cerro mucho el 6 pero seguro cuando vea el video me dare cuenta si me equivoque o no. Saludos desde ARG 🤖
     }
 }
